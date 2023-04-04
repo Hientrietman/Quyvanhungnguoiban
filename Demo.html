@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Quý và những người bạn
+    </title>
+    <link rel="stylesheet" href="CSSstyles/general.css">
+    <link rel="stylesheet" href="CSSstyles/header.css">
+    <link rel="stylesheet" href="CSSstyles/tatCaDe.css">
+    <link rel="stylesheet" href="CSSstyles/introduction.css">
+    <link rel="stylesheet" href="CSSstyles/features.css">
+    <link rel="stylesheet" href="CSSstyles/contact.css">
+    <link rel="stylesheet" href="CSSstyles/dangnhap.css">
+    <link rel="stylesheet" href="CSSstyles/taiLieuThamKhao.css">
+    <script src="https://kit.fontawesome.com/7142a5592c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+
+<body>
+    
+    <section class="header">
+
+              <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">Nhóm 7</label>
+                <ul>
+                  <li><a  href="#landingPage">Trang chủ</a></li>
+                  <li><a href="#">Các Môn</a></li>
+                  <li><a href="#gt">Giới Thiệu</a></li>
+                  <li><a href="#">Tạo đề</a></li>
+                  <li><a href="#">Hoạt động</a></li>
+                </ul>
+              </nav>
+
+    </section>
+
+    <section class="introduction" id="landingPage">
+
+        <div class="introCotent">
+            
+            <p class="iTitle1"><span class="deDang">Hỗ trợ</span> nâng cao khả năng của bạn</p>
+            <p class="iTitle2">với những bộ đề được cập nhật liên tục</p>
+            
+            <div class="buttonContainer">
+                <button id="js-signin"class="signin">Sign In</button>
+                <button class="signup">Sign Up</button>
+            </div>
+
+        </div>
+
+        <div id="login-container">
+
+            <h1>Đăng nhập</h1>
+
+            <form>
+                <input type="text" placeholder="Số điện thoại hoặc email"/>
+                <input type="password" placeholder="Mật khẩu"/>
+                <input type="submit" value="Đăng nhập"/>
+            </form>
+
+            <h2 href="#">Quên mật khẩu</h2>
+
+            <div id="signup">
+                Nếu bạn chưa có tài khoản? <a href="#landingPage">Đăng ký ngay</a>
+            </div>
+
+        </div>
+
+        <script src="JavaScript/popup-login.js"></script>
+       
+        
+    </section>
+    
+    <section class="featuresSection spacer">
+       
+        <div>
+            <svg id="visual"
+                  viewBox="0 0 1000 600"
+                  width="1100" 
+                  height="700" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  version="1.1">
+              
+               <g transform="translate(466.3308426563172 267.32189553844887)">
+                   <path id="blob1"
+                    d="M122.9 -116.9C153.9 -91.9 170 -46 165.2 -4.7C160.5 36.5 135.1 73.1 104.1 121.7C73.1 170.4 36.5 231.2 -10.6 241.8C-57.7 252.4 -115.5 212.8 -147.8 164.2C-180.2 115.5 -187.1 57.7 -193.6 -6.5C-200 -70.7 -206.1 -141.4 -173.8 -166.4C-141.4 -191.4 -70.7 -170.7 -12.4 -158.3C46 -146 91.9 -141.9 122.9 -116.9"
+                    fill="#BB004B"></path>
+               </g>
+   
+               <g  transform="translate(454.29385182047673 261.34686699857593)">
+                <path id="blob2" 
+                d="M103.5 -108.2C136.4 -70.7 166.7 -35.4 181.5 14.8C196.4 65.1 195.8 130.1 162.9 180.1C130.1 230.1 65.1 265.1 2.2 262.8C-60.6 260.6 -121.2 221.2 -157.8 171.2C-194.5 121.2 -207.2 60.6 -194.9 12.4C-182.5 -35.8 -145 -71.7 -108.3 -109.2C-71.7 -146.7 -35.8 -185.8 -0.2 -185.6C35.4 -185.4 70.7 -145.7 103.5 -108.2" 
+                fill="#BB004B" 
+                style="visibility:hidden" ></path></g>
+   
+           </svg>
+
+           <script>
+              const tween = KUTE.fromTo(
+             '#blob1',
+             { path: '#blob1' },
+             { path: '#blob2' },
+             { repeat: 999, duration: 3000, yoyo: true }
+           )
+           tween.start();
+           </script>
+
+        </div>
+       <div class="featuresContainer">
+            <div class="fTitle">Các tính năng của chúng tôi</div>
+
+            <div class="features">
+
+                <div>
+                    <img src="/Icons/mycollection/png/003-question-and-answer.png" alt="">
+                    <p>Ngân hàng câu hỏi khổng lồ</p>
+                </div>
+
+                <div>
+                    <img src="/Icons/mycollection/png/006-search-interface-symbol.png" alt="">
+                    <p>Kết quả trả về nhanh chóng</p>
+                </div>
+
+                <div>
+                    <img src="/Icons/mycollection/png/002-24-7.png" alt="">
+                    <p>Được hỗ trỡ các vấn đề 24/7</p>
+                </div>
+
+                <div>
+                    <img src="/Icons/mycollection/png/005-more.png" alt="">
+                    <p>Có thể tạo bộ đề của riêng mình</p>
+                </div>
+
+                <div>
+                    <img src="/Icons/mycollection/png/001-review.png" alt="">
+                    <p>Dễ dàng xem các hoạt động và bộ đề đã làm</p>
+                </div>
+                
+            </div>
+       </div>
+            
+       
+       
+    </section>
+
+    <section class="tatCaDe">
+
+        <div class="cardContainer">
+
+            <div class="card">
+                <img class="imgbox" src="SVG/math-book-svgrepo-com.svg" alt="">
+                <div class="contentTCD">
+                    <h1>Toán</h1>
+                    <p>1+1=2 quick math</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imgbox" src="SVG/physics-atom-svgrepo-com.svg" alt="">
+                <div class="contentTCD">
+                    <h1>Lý</h1>
+                    <p>Quán tính, vận tốc</p>
+                </div>   
+            </div>
+
+            <div class="card">
+                <img class="imgbox" src="SVG/chemistry-6-svgrepo-com.svg" alt="">
+                <div class="contentTCD">
+                    <h1>Hoá</h1>
+                    <p>C+02=C02</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imgbox" src="SVG/english-svgrepo-com.svg" alt="">
+                <div class="contentTCD">
+                    <h1>Tiếng anh</h1>
+                    <p>I'm fine thank you and you</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="imgWrapper">
+            <img class="s" src="SVG/undraw_book_lover_re_rwjy.svg" alt="" />
+        </div>
+
+    </section>
+
+    <section class="tltk">
+
+       <h1>Tài liệu tham khảo</h1>
+       
+       <div class="taiLieuThamKhaoContainter">
+
+          <div class="tltkLink">
+              <img src="" alt="">
+              <a href=""></a>
+          </div>
+
+          <div class="tltkLink">
+            <img src="" alt="">
+            <a href=""></a>
+          </div>
+
+          <div class="tltkLink">
+            <img src="" alt="">
+            <a href=""></a>
+          </div>
+
+          <div class="tltkLink">
+            <img src="" alt="">
+            <a href=""></a>
+          </div>
+
+          <div class="tltkLink">
+            <img src="" alt="">
+            <a href=""></a>
+          </div>
+
+          <div class="tltkLink">
+            <img src="" alt="">
+            <a href=""></a>
+          </div>
+       </div>
+    </section>
+    
+    <section class="contact" id="gt">
+
+        <div class="container">
+
+            <input type="radio" name="dot" id="one">
+            <input type="radio" name="dot" id="two">
+
+            <div class="main-card">
+              <div class="cards">
+
+                <div class="fbcard">
+                 <div class="content">
+                   <div class="img">
+                    <!--- <img src="images/img1.jpg" alt="">-->
+                   </div>
+                   <div class="details">
+                     <div class="name">Lê Văn Quý</div>
+                     <div class="name">47.01.104.176</div>
+                     <div class="job">front-end</div>
+                   </div>
+                   <div class="media-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                   </div>
+                 </div>
+                </div>
+
+                <div class="fbcard">
+                 <div class="content">
+                   <div class="img">
+                    <!--- <img src="images/img2.jpg" alt="">--->
+                   </div>
+                   <div class="details">
+                    <div class="name">Nguyễn Minh Hoàng</div>
+                    <div class="name">47.01.104.xxx</div>
+                    <div class="job">front-end</div>
+                   </div>
+                   <div class="media-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                   </div>
+                 </div>
+                </div>
+
+                <div class="fbcard">
+                 <div class="content">
+                   <div class="img">
+                    <!-- <img src="images/img3.jpg" alt="">---->
+                   </div>
+                   <div class="details">
+                    <div class="name">Trần Minh Khôi</div>
+                    <div class="name">47.01.104.xxx</div>
+                    <div class="job">back-end</div>
+                   </div>
+                   <div class="media-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                   </div>
+                 </div>
+                </div>
+              </div>
+
+              <div class="cards">
+
+                <div class="fbcard">
+                 <div class="content">
+                   <div class="img">
+                     <!---<img src="images/img4.jpg" alt="">--->
+                   </div>
+                   <div class="details">
+                     <div class="name">Ngô Lâm Phong</div>
+                     <div class="name">47.01.104.xxx</div>
+                    <div class="job">back-end</div>
+                   </div>
+                   <div class="media-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                   </div>
+                 </div>
+                </div>
+              
+                <div class="fbcard">
+                 <div class="content">
+                   <div class="img">
+                     <!--<img src="images/img6.jpeg" alt="">--->
+                   </div>
+                   <div class="details">
+                    <div class="name">Võ Khắc Kiệt</div>
+                    <div class="name">47.01.104.xxx</div>
+                    <div class="job">front-end</div>
+                   </div>
+                   <div class="media-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="button">
+              <label for="one" class=" active one"></label>
+              <label for="two" class="two"></label>
+            </div>
+
+        </div>
+      
+    </section>
+
+</body>
+
+</html>

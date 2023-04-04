@@ -1,0 +1,89 @@
+.introduction{
+    
+   
+    aspect-ratio: 900/600;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    margin-top:80px;
+    width: 100%;
+    height:100vh;
+    background-image: url('../SVG/layered-waves-haikei.svg');
+}
+
+.iTitle1{
+    
+    padding: 250px 0px 0px 180px;
+    font-size:72px;
+   width: 900px;
+    color: white;
+    transition: 0.35s;
+}
+.iTitle2{
+  
+   padding-left: 183px;
+   margin-top: 20px;
+    font-size: 40px;
+   text-shadow: 2px 2px 2px rgb(204, 204, 204);
+    color: rgb(204, 204, 204);
+    transition: 0.35s;
+}
+
+.deDang{
+    color:rgb(250, 114, 104);
+    text-shadow: 3px 3px 4px rgb(250, 114, 104);    
+}
+.buttonContainer{
+    display: block;
+    margin-top: 25px;
+    margin-left: 185px;
+   
+}
+.signin, .signup{
+    cursor: pointer;
+  
+    margin-right: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Tilt Neon';
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: rgb(250, 114, 104);
+    border-style: solid;
+    height: 40px;
+    width: 120px;
+}
+.signin:hover, .signup:hover{
+   opacity: 0.65;
+   transition: 0.35s;
+}
+.signin{
+    background-color: rgb(221, 117, 110);
+}
+@media(max-width:1429px){
+    .iTitle1{
+        padding-left: 25px;
+       
+        font-size: 56px;
+        transition: 0.35s;
+    }
+    .iTitle2{
+        padding-left: 25px;
+        font-size: 32px;
+        transition: 0.35s;
+    }
+}
+@media(max-width:808px){
+    .iTitle1{
+        padding-left: 25px;
+        font-size: 38px;
+        transition: 0.35s;
+    }
+    .iTitle2{
+        padding-left: 25px;
+        font-size: 28px;
+        transition: 0.35s;
+    }
+}

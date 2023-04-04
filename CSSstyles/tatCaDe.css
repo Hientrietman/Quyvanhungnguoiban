@@ -1,0 +1,79 @@
+.tatCaDe{
+    
+    height: 100vh;
+    display: grid;
+    background-color: rgb(202, 225, 245);
+    align-items: center;
+    grid-template-columns: 1fr 910px;
+    
+}
+.cardContainer{
+    display: grid;
+    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.card{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0,0.6);
+    cursor: pointer;
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    border: 5px solid rgb(80, 178, 182);
+    border-radius: 12px;
+  z-index: 0;
+    transition: 0.5s;
+}
+.card:hover{
+    transition: 0.5s;
+    width: 300px;
+    height: 300px;
+    
+}
+.imgbox{
+    padding: 25px;
+    z-index: 10;
+    position: absolute;
+    transition: 0.5s;
+    width: 250px;
+    height:200px;
+    border-radius: 12px;
+    background-color:rgb(80, 178, 182);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0,0.6);
+    
+}
+
+.card:hover .imgbox{
+    top:-30px;
+    transition: 0.5s;
+    width: 250px;
+    height:150px;
+ 
+    
+}
+.contentTCD{
+    text-align: center;
+    position: absolute;
+    font-family: 'Tilt Neon';
+    font-weight: 800;
+    bottom: 80px;
+}
+.contentTCD h1{
+    color: rgb(80, 178, 182);
+}
+.contentTCD p{
+    font-size: 20px;
+}
+.s{
+    width: 100%;
+    padding-left: 150px;
+}

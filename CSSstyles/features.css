@@ -1,0 +1,119 @@
+.featuresSection{
+    height: 100vh;
+  
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-items: center;
+ 
+    
+}
+.spacer{
+    
+    background-color: #2a3342;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.featuresContainer{
+    color: aliceblue;
+    font-family: 'Tilt Neon';
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  
+ 
+}
+.fTitle{
+    margin-top: 35px;
+    font-size: 52px;
+    margin-left: -45px;
+    text-align: center;
+    font-weight: 700;
+}
+.features{
+    margin: 75px 45px 0px 0px;
+    column-gap: 15px;
+    row-gap: 15px;
+   max-height: 947px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px ;
+}
+.features div{
+    cursor: pointer;
+    padding-top: 35px;
+    
+    font-size: 24px;
+    height: 300px;
+    text-align: center;
+    background-color:rgb(0, 187, 204);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    border-color:#F8D5D2;
+}
+.features div:hover{   
+    background-color: rgba(0, 187, 204, 0.512);
+    transition: 0.35s;
+    
+}
+.features img{
+    
+    margin-bottom: 50px;
+}
+@media(max-width:1827px ){
+    .features div{
+        font-size: 18px;
+        height: 250px;
+        width:200px;
+       
+        padding-bottom: 15px;
+        padding-top: 0px;
+        transition: 0.35s;
+       
+    }
+    .features{
+        margin-left: 10px;
+        column-gap: 5px;
+        row-gap: 35px;
+    }
+    .features img{
+        margin-top: 30px;
+    }
+    #visual{
+        height: 900px;
+        width: 750px;
+    }
+    .fTitle{
+        font-size: 48px
+    }
+}
+@media(max-width:1515px ){
+    .features div{
+        font-size: 16px;
+        height: 210px;
+        width:170px;
+       
+        padding-bottom: 10px;
+        padding-top: 0px;
+        transition: 0.35s;
+       
+    }
+    .features{
+        margin-left: 5px;
+        column-gap: 0px;
+        row-gap: 40px;
+    }
+    .features img{
+        margin-top: 25px;
+    }
+    #visual{
+        height: 650px;
+        width: 550px;
+    }
+    .fTitle{
+        font-size: 36px
+    }
+}

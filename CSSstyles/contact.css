@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+::selection{
+  background:	#FF676D;
+  color: #fff;
+}
+.contact{
+  transition: 0.5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(48, 48, 48);
+}
+.container{
+ 
+   position: absolute;
+   top: -90px;
+  max-width: 950px;
+  width: 100%;
+
+  
+}
+.container .main-card{
+  display: flex;
+ 
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.cards{
+   
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin: 0 20px;
+ 
+}
+.main-card .cards .fbcard{
+
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .fbcard:hover{
+  transform: translateY(-15px);
+}
+.cards .fbcard .content{
+ 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .fbcard .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+  margin-bottom: 14px;
+}
+.fbcard .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.fbcard .content .name{
+    
+  font-size:22px;
+  font-weight:600;
+}
+.fbcard .content .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.fbcard .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .fbcard{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .fbcard{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
