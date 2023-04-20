@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Thông tin tài khoản</title>
+  <head>
+    <title>Thong tin</title>
     <link rel="stylesheet" type="text/css" href="CSSstyles/thongtin.css">
-</head>
-<body>
-    <div id="account-container">
-        <h1>Thông tin tài khoản</h1>
-        <form>
-            <label for="username">Tên tài khoản:</label>
-            <input type="text" id="username" name="username" placeholder="NguyenVanA"/>
-                    <label for="fullname">Họ và tên:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn A"/>
+    <style>
+    
 
-        <label for="student-id">Mã số sinh viên:</label>
-        <input type="text" id="student-id" name="student-id" placeholder="47.01.10"/>
+    </style>
+  </head>
+  <body>
+    <div class="left-menu">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Tạo đề</a></li>
+          <li><a href="#">Các môn</a></li>
+          <li><a href="#">Hoạt động</a></li>
+          <li><a href="#">Thông tin cá nhân</a></li>
+        </ul>
+      </div>
 
-        <label for="class">Lớp:</label>
-        <input type="text" id="class" name="class" placeholder="CNTT"/>
-
-        <label for="phone-number">Số điện thoại:</label>
-        <input type="text" id="phone-number" name="phone-number" placeholder="0123456789"/>
-
-        <input type="submit" id="update-btn" placeholder="Cập nhật"/>
-    </form>
-    <div id="change-password">
-        <a href="#">Thay đổi mật khẩu</a>
-    </div>
-</div>
+      <div class="public-profile">
+        <div class="profile-image">
+          <img src="Pictures/avatar.jpg" alt="Avatar">
+        </div>
+        <div class="profile-info">
+          <h2>Username</h2>
+          <button>Edit Profile</button>
+        </div>
+      </div>
+      
+      <div class="private-info">
+        <h2>Private Information</h2>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Nhập địa chỉ email để sửa">
+        <button type="submit">Change</button>
+        
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Nhập first name">
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Nhập last name">
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+          <option value="english">English</option>
+          <option value="vietnamese">Việt Nam</option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+          <option value="spanish">Spanish</option>
+        </select>
+        
+        <label for="country">Country/Region:</label>
+        <select id="country" name="country">
+          <option value="us">United States</option>
+          <option value="vn">Việt Nam</option>
+          <option value="uk">United Kingdom</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="es">Spain</option>
+        </select>
+        
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" style="width: 500px; height: 20px; padding: 10px; font-size: 20px; border-radius: 5px; border: 1px solid #ccc;">
+        
+        
+        
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại">
+        <button>change</button>
+      </div>
+      
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
-            
-            
-            

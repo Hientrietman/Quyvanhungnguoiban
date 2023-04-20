@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang đăng kí</title>
+</head>
+<style>
+body {
+    background-color: #C2FBFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#signup-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+h2 {
+    text-align: right;
+    color: #333;
+    margin-top: 20px;
+    font-size: 14px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color:#f2f2f2;
+    font-size: 16px;
+}
+input[type="submit"] {
+background-color: #00BBCC;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 18px;
+height: 45px;
+margin: 20px auto 0;
+width: 120px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    text-decoration: underline;
+}
+#signup {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+#signup a {
+    color: #00BBCC;
+    font-weight: bold;
+}
+
+#social-signup {
+    margin-top: 20px;
+    text-align: center;
+}
+#social-signup h3 {
+    color: #333;
+    font-size: 16px;
+}
+#social-signup button {
+    background-color: #3B5998;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 0 10px;
+}
+#social-signup button.google {
+    background-color: #DB4437;
+}
+</style>
+<body>
+    <div id="signup-container">
+        <h1>Đăng kí</h1>
+        <form>
+            <input type="text" placeholder="Họ tên"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Mật khẩu"/>
+            <input type="password" placeholder="Nhập lại mật khẩu"/>
+            <input type="submit" value="Đăng kí"/>
+        </form>
+
+        <div id="social-signup">
+            <h3>Hoặc đăng kí bằng:</h3>
+            <button class="facebook">Facebook</button>
+            <button class="google">Google</button>
+        </div>
+
+        <div id="signup">
+            Nếu bạn đã có tài khoản? <a href="#">Đăng nhập ngay</a>
+        </div>
+    </div>
+</body>
+</html>
